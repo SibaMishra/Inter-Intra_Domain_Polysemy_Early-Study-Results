@@ -1,0 +1,16 @@
+WND {'dev_f1': 0.926, 'P': 0.85, 'R': 0.8, 'F1': 0.824, 'type': np.float64(0.358), 'type_tied': np.float64(0.408), 'tau': 0.15, 'w': (0.478, 0.486, 0.036)}
+Spread Only (WND types) {'type': np.float64(0.342), 'F1': 0.809}
+WND w/o glossary {'dev_f1': 0.926, 'P': 0.838, 'R': 0.733, 'F1': 0.782, 'type': np.float64(0.325), 'type_tied': np.float64(0.375), 'tau': 0.15, 'w': (0.478, 0.486, 0.036)}
+F1 CI [np.float64(0.8), np.float64(0.9)]
+missed 24 {'not candidate': 24}
+type confusion on detected {'Inter-Domain': {'Inter-Domain': 20, 'Intra-Domain': 13}, 'Intra-Domain': {'Inter-Domain': 38, 'Intra-Domain': 23}}
+CASE review gold Intra-Domain S 0.646 marked True type Inter-Domain | [Finance/Business] a new appraisal or evaluation (0.000) || [General] an essay or article that gives a critical evaluation (as of  (0.000) || [General] a subsequent examination of a patient for the purpose of mon (0.000)
+CASE pipeline gold Inter-Domain S 0.0 marked False type None | 
+CASE firewall gold None S 0.478 marked True type Intra-Domain | [General] (colloquial) the application of maximum thrust (0.315) || [General] (computing) a security system consisting of a combination of (0.257) || [General] a fireproof (or fire-resistant) wall designed to prevent the (0.135)
+CASE charge gold Inter-Domain S 0.976 marked True type Inter-Domain | [Finance/Business] request for payment of a debt (0.242) || [General] a quantity of explosive to be set off at one time (0.236) || [Finance/Business] an impetuous rush toward someone or something (0.222)
+                            F1          type        type_tied       
+                          mean    std   mean    std      mean    std
+method                                                              
+Spread Only (WND types)  0.826  0.013  0.378  0.050       NaN    NaN
+WND                      0.852  0.027  0.381  0.035     0.407  0.036
+WND w/o glossary         0.788  0.055  0.331  0.045     0.354  0.053

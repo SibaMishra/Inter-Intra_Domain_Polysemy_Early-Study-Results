@@ -1,0 +1,47 @@
+PURE sentences 10110 unique+clean 9605
+primary dev 77 test 173
+
+== primary split, vocabulary=dev  always-Inter 0.633 always-Intra 0.367
+Proposed     devF1 0.941 P 0.871 R 0.450 F1 0.593 type 0.283 tau=0.47 w=(0.343,0.414,0.243)
+Spread only  devF1 0.926 P 0.845 R 0.775 F1 0.809 type 0.433 tau=0.02
+No glossary  devF1 0.941 P 0.867 R 0.433 F1 0.578 type 0.267 tau=0.47 w=(0.343,0.414,0.243)
+CI {'accuracy_ci': (np.float64(49.7), np.float64(64.7)), 'precision_ci': (np.float64(77.9), np.float64(95.0)), 'recall_ci': (np.float64(36.0), np.float64(54.4)), 'f1_ci': (np.float64(50.0), np.float64(67.7)), 'type_acc_ci': (np.float64(20.7), np.float64(37.3))}
+tp fp fn tn 54 8 66 45 typed correct 34 recall breakdown {'not_candidate': 24, 'zero_context': 12, 'below_tau': 30, 'zero_context_marked': 9}
+pred          Inter-Domain  Intra-Domain
+gold                                    
+Inter-Domain            23             9
+Intra-Domain            11            11
+
+== primary split, vocabulary=pure  always-Inter 0.633 always-Intra 0.367
+Proposed     devF1 0.935 P 0.841 R 0.575 F1 0.683 type 0.308 tau=0.39 w=(0.345,0.424,0.231)
+Spread only  devF1 0.926 P 0.847 R 0.783 F1 0.814 type 0.408 tau=0.02
+No glossary  devF1 0.935 P 0.841 R 0.575 F1 0.683 type 0.308 tau=0.39 w=(0.345,0.424,0.231)
+CI {'accuracy_ci': (np.float64(56.1), np.float64(69.9)), 'precision_ci': (np.float64(75.6), np.float64(91.5)), 'recall_ci': (np.float64(48.7), np.float64(65.8)), 'f1_ci': (np.float64(60.3), np.float64(75.2)), 'type_acc_ci': (np.float64(22.9), np.float64(39.3))}
+tp fp fn tn 69 13 51 40 typed correct 37 recall breakdown {'not_candidate': 24, 'zero_context': 6, 'below_tau': 21, 'zero_context_marked': 2}
+pred          Inter-Domain  Intra-Domain
+gold                                    
+Inter-Domain            27            16
+Intra-Domain            16            10
+seed 1 done
+seed 2 done
+seed 3 done
+seed 4 done
+seed 5 done
+seed 6 done
+seed 7 done
+seed 8 done
+seed 9 done
+seed 10 done
+                       f1          prec           rec          type       
+                     mean    std   mean    std   mean    std   mean    std
+vocab method                                                              
+dev   No glossary   0.797  0.064  0.875  0.032  0.737  0.094  0.397  0.059
+      Proposed      0.848  0.021  0.878  0.023  0.820  0.029  0.442  0.024
+      Spread only   0.826  0.013  0.832  0.074  0.834  0.090  0.449  0.035
+      always-Inter    NaN    NaN    NaN    NaN    NaN    NaN  0.630  0.006
+      always-Intra    NaN    NaN    NaN    NaN    NaN    NaN  0.370  0.006
+pure  No glossary   0.806  0.049  0.877  0.032  0.748  0.071  0.374  0.038
+      Proposed      0.845  0.029  0.877  0.025  0.817  0.036  0.400  0.042
+      Spread only   0.835  0.017  0.834  0.075  0.849  0.083  0.409  0.052
+      always-Inter    NaN    NaN    NaN    NaN    NaN    NaN  0.630  0.006
+      always-Intra    NaN    NaN    NaN    NaN    NaN    NaN  0.370  0.006

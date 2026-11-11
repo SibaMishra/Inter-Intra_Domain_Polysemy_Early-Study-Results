@@ -1,0 +1,41 @@
+======================================================================
+EVALUATING DOMAIN IDENTIFICATION & MAPPING COMPONENT
+======================================================================
+
+Overall Domain Mapping Accuracy: 40.00%
+
+Per-Domain Classification Report:
+                  precision    recall  f1-score   support
+
+Finance/Business       0.50      0.67      0.57         3
+         General       0.67      0.36      0.47        11
+      Healthcare       0.33      1.00      0.50         1
+Legal/Regulatory       0.00      0.00      0.00         2
+      Networking       0.00      0.00      0.00         0
+     Software/IT       0.20      0.33      0.25         3
+
+        accuracy                           0.40        20
+       macro avg       0.28      0.39      0.30        20
+    weighted avg       0.49      0.40      0.41        20
+
+----------------------------------------------------------------------
+FOCUS WORDS:
+----------------------------------------------------------------------
+[CORRECT] port.n.01 (port): Gold=General, Predicted=General (lexname=noun.location, conf=0.21)
+    Def: a place (seaport or airport) where people and merchandise can enter or leave a country
+[MISCLASSIFIED] port.n.02 (port): Gold=General, Predicted=Networking (lexname=noun.food, conf=0.063)
+    Def: sweet dark-red dessert wine originally from Portugal
+[CORRECT] interface.n.04 (port): Gold=Software/IT, Predicted=Software/IT (lexname=noun.artifact, conf=0.186)
+    Def: (computer science) computer circuit consisting of the hardware and associated circuitry that links one device with another (especially a computer and a hard disk drive or other peripherals)
+[CORRECT] service.n.01 (service): Gold=General, Predicted=General (lexname=noun.act, conf=0.26)
+    Def: work done by one person or group that benefits another
+[MISCLASSIFIED] service.n.13 (service): Gold=Legal/Regulatory, Predicted=Software/IT (lexname=noun.act, conf=0.174)
+    Def: the act of delivering a writ or summons upon someone
+[CORRECT] solution.n.03 (solution): Gold=General, Predicted=General (lexname=noun.cognition, conf=0.226)
+    Def: a method for solving a problem
+[MISCLASSIFIED] solution.n.01 (solution): Gold=General, Predicted=Healthcare (lexname=noun.substance, conf=0.18)
+    Def: a homogeneous mixture of two or more substances; frequently (but not necessarily) a liquid solution
+[CORRECT] system.n.06 (system): Gold=Healthcare, Predicted=Healthcare (lexname=noun.body, conf=0.255)
+    Def: a group of physiologically or anatomically related organs or parts
+
+Wrote results/domain_mapping_evaluation.csv and results/domain_mapping_report.md

@@ -1,0 +1,21 @@
+synset,word,gold_domain,predicted_domain,confidence,lexname,is_correct,definition
+port.n.01,port,General,General,0.21,noun.location,True,a place (seaport or airport) where people and merchandise can enter or leave a country
+port.n.02,port,General,Networking,0.063,noun.food,False,sweet dark-red dessert wine originally from Portugal
+interface.n.04,port,Software/IT,Software/IT,0.186,noun.artifact,True,(computer science) computer circuit consisting of the hardware and associated circuitry that links one device with another (especially a computer and a hard disk drive or other peripherals)
+service.n.01,service,General,General,0.26,noun.act,True,work done by one person or group that benefits another
+service.n.13,service,Legal/Regulatory,Software/IT,0.174,noun.act,False,the act of delivering a writ or summons upon someone
+record.n.06,record,General,Software/IT,0.16,noun.act,False,an extreme attainment; the best (or worst) performance ever attested (as in a sport)
+chart.n.01,chart,General,General,0.16,noun.communication,True,a visual display of information
+ordering.n.01,order,Software/IT,Finance/Business,0.183,noun.group,False,logical or comprehensible arrangement of separate elements
+order.n.07,order,Finance/Business,Finance/Business,0.191,noun.communication,True,a commercial document used to request someone to supply something in return for payment and providing specifications and quantities
+solution.n.03,solution,General,General,0.226,noun.cognition,True,a method for solving a problem
+solution.n.01,solution,General,Healthcare,0.18,noun.substance,False,a homogeneous mixture of two or more substances; frequently (but not necessarily) a liquid solution
+system.n.06,system,Healthcare,Healthcare,0.255,noun.body,True,a group of physiologically or anatomically related organs or parts
+key.n.01,key,General,Software/IT,0.16,noun.artifact,False,metal device shaped in such a way that when it is inserted into the appropriate lock the lock's mechanism can be rotated
+table.n.02,table,General,Software/IT,0.187,noun.artifact,False,a piece of furniture having a smooth flat top that is usually supported by one or more vertical legs
+table.n.01,table,Software/IT,General,0.12,noun.group,False,a set of data arranged in rows and columns
+supplier.n.01,provider,General,Healthcare,0.176,noun.person,False,someone whose business is to supply a particular service or commodity
+claim.n.02,claim,General,Finance/Business,0.143,noun.communication,False,an assertion that something is true or factual
+claim.n.01,claim,Finance/Business,Finance/Business,0.133,noun.communication,True,an assertion of a right (as to money or property)
+policy.n.01,policy,Legal/Regulatory,General,0.254,noun.cognition,False,a plan of action adopted by an individual or social group
+policy.n.03,policy,Finance/Business,Legal/Regulatory,0.195,noun.communication,False,written contract or certificate of insurance
